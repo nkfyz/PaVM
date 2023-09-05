@@ -48,6 +48,8 @@ PaVM provides several data areas to store the multithread-related data as follow
 - Record Data
 - Thread State Table
 
+The implementation of the above areas can be found in /core/vm/ folder.
+
 Besides, PaVM also supports typical areas such as:
 
 - Stack
