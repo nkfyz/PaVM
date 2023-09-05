@@ -1,5 +1,8 @@
 # PaVM
-The source code of PaVM, a smart contract virtual machine that supports inter- and inner-parallel execution.
+
+Hello there!
+
+This repo is created for publishing the source code of PaVM, a smart contract virtual machine that supports inter- and inner-contract parallel execution.
 
 ## Get started
 
@@ -55,12 +58,13 @@ Besides, PaVM also supports typical areas such as:
 - Stack
 - Persistent Storage
 
-## Enable parallel in contract
+## Enable parallel!
 
 ### Key interfaces for developer
 
 The features such as multithreading can be enabled by interfaces/keywords provided by PaVM:
 
+<img width="301" alt="image" src="https://github.com/nkfyz/PaVM/assets/62918515/78014960-bd69-4b7b-8f23-1bde16b3b878">
 
 
 
