@@ -40,4 +40,15 @@ func op[insturction_name] (ret) {stack..}{
 }
 ```
 
+### New data area
 
+PaVM provides several data areas to store the multithread-related data as follows:
+
+- Thread Data
+- Record Data
+- Thread State Table
+
+Besides, PaVM also supports typical areas such as:
+
+- Stack
+- Persistent Storage
