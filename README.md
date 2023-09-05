@@ -10,3 +10,22 @@ chmod +x compile.sh
 # compile PaVM
 ./compile.sh
 ```
+
+## Introduction
+
+### Key instructions
+
+Type|Mnemonic|Opcode|Context
+---|---|---|---
+Thread|control|SUBSOL|0xA1|PUSH,|PUSH
+Thread|control|SLEEP|0xA2|PUSH,|PUSH
+Thread|control|REVERTT|0xA3|PUSH
+Data|control|AFTERW|0xA4|PUSH,|MLOAD
+Data|control|AFTERR|0xA5|PUSH,|MLOAD
+Data|control|AFTERA|0xA6|PUSH,|MLOAD
+Runtime|record|RR|0xA7|PUSH,|MLOAD
+Runtime|record|RPHASH|0xA8|PUSH,|MLOAD
+Runtime|record|RDR|0xA9|PUSH
+Runtime|record|WTR|0xAA|PUSH
+
+
