@@ -54,3 +54,13 @@ Besides, PaVM also supports typical areas such as:
 
 - Stack
 - Persistent Storage
+
+## Enable parallel in contract
+
+### Key interfaces for developer
+
+The features such as multithreading can be enabled by interfaces/keywords provided by PaVM:
+
+
+
+
