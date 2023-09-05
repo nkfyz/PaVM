@@ -15,6 +15,8 @@ chmod +x compile.sh
 
 ### Key instructions
 
+The newly added instructions in PaVM is listed as follows:
+
 Type|Mnemonic|Opcode|Context
 ---|---|---|---
 Thread|control|SUBSOL|0xA1|PUSH,|PUSH
@@ -27,5 +29,15 @@ Runtime|record|RR|0xA7|PUSH,|MLOAD
 Runtime|record|RPHASH|0xA8|PUSH,|MLOAD
 Runtime|record|RDR|0xA9|PUSH
 Runtime|record|WTR|0xAA|PUSH
+
+The implementation of each instruction obeies the following code:
+
+```golang
+func op[insturction_name] (ret) {stack..}{
+  // get the args from VM Stack
+  // instruction specific logic
+  // return value
+}
+```
 
 
