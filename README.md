@@ -66,5 +66,33 @@ The features such as multithreading can be enabled by interfaces/keywords provid
 
 <img width="301" alt="image" src="https://github.com/nkfyz/PaVM/assets/62918515/78014960-bd69-4b7b-8f23-1bde16b3b878">
 
+Have a try with this demo contract:
+
+```solidity
+contract WordCount {
+  function count(string textSegment) {
+    mapping string[int] ret;
+    for(int i = 0; i < len(textSegment); i++) {
+      string word = textSegment[i];
+      ret[word] == NULL ? ret[word] = 0 : ret[word]++;
+    }
+    return ret;
+}
+11
+12 /* Enable runtime record and hash computing in main function */
+13 function rr rphash main(string text) {
+14 int length = len(text);
+15
+16 mapping tempRet1 = subsol [1] count(text[0 : length/2]);
+17 mapping tempRet2 = subsol [2] count(text[length/2 : length]);
+18 sleep [1] 1000; // No.1 thread sleeps for 1000ms
+19 revertt [2]; // Revert the operations made by No.2 thread
+20
+21 /* Join the two temporary values by embedded function */
+22 return join(tempRet1, tempRet2);
+23 }
+24 }
+```
+
 
 
